@@ -18,12 +18,16 @@ else:
         print("Prime") 
 
 
-# Optimized version
+# Optimized version - Skip even numbers
 n = int(input())
 def isprime(n):
     if n <= 1:
         return False
-    for i in range(2, int(n ** 0.5) + 1):   # only need to check up to sqrt(n)
+    if n == 2:
+        return True
+    if n % 2 == 0:  # Skip all even numbers
+        return False
+    for i in range(3, int(n ** 0.5) + 1, 2):  # Check only odd numbers
         if n % i == 0:
             return False
     return True
