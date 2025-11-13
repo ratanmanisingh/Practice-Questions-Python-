@@ -40,8 +40,31 @@
 # right(5)
 
 # Piramid or equilateral triangle
-def piramid(n):
-    for i in range(1,n+1):
-        print(" " * (n-i), end="")
-        print("*" * (2*i-1))
-piramid(5)
+# def piramid(n):
+#     for i in range(1,n+1):
+#         print(" " * (n-i), end="")
+#         print("*" * (2*i-1))
+# piramid(5)
+
+# Inverted piramid
+# def inverted_piramid(n):
+#     for i in range(n):
+#         print(" " * i,end="")
+#         print("*" * (2*(n-i)-1))
+# inverted_piramid(5)
+
+# Diamond
+# def diamond(n):
+#     for i in range(n):
+#         print(" " * (n-i), end="")
+#         print("*" * (2*i-1))
+#     for i in range(n):
+#         print(" " * i, end ="")
+#         print("*" * (2*(n-i)-1))
+# diamond(10)
+
+
+
+
+
+
